@@ -1,0 +1,15 @@
+{
+	"name": "orce2edatafactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "747087a8-d103-4099-8170-45dfa62f6d6a",
+		"tenantId": "2fe59993-a389-4511-80ad-56baa037b225"
+	}
+}

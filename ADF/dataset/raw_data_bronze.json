@@ -1,0 +1,31 @@
+{
+	"name": "raw_data_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "http_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pr_rel_url": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().pr_rel_url",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
